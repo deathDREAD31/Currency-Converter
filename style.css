@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #3c8ce7, #00eaff);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 1rem; 
+    padding: 2rem 3rem; 
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5); 
+    width: 22rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+}
+
+.amount {
+    text-align: center;
+}
+
+.amount p {
+    font-size: 1.2rem;
+    margin-bottom: 0.625rem; 
+}
+
+.amount input {
+    width: 100%;
+    padding: 1rem; 
+    border: none;
+    border-radius: 0.625rem; 
+    outline: none;
+    font-size: 1rem;
+    color: #333;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.from, .to {
+    flex: 1;
+}
+
+.from p, .to p {
+    font-size: 1rem;
+    margin-bottom: 0.3125rem; 
+    text-align: center;
+}
+
+.select_conutry, .select_country {
+    display: flex;
+    align-items: center;
+    gap: 1rem; 
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 0.625rem; 
+}
+
+select {
+    width: 100%;
+    padding: 0.5rem; 
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select option {
+    color: #000000;
+}
+
+img {
+    width: 2.5rem; 
+    height: 2.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 0.125rem solid #ffffff; 
+}
+
+.fa-arrow-right-arrow-left {
+    font-size: 1.5rem;
+    color: #00eaff;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.fa-arrow-right-arrow-left:hover {
+    transform: rotate(180deg);
+}
+
+.msg {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.75rem;
+    border-radius: 0.625rem; 
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+button {
+    padding: 0.75rem; 
+    border: none;
+    border-radius: 0.625rem; 
+    background: #00eaff;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #007fbf;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
